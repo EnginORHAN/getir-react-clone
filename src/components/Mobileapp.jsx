@@ -12,7 +12,7 @@ function Mobileapp() {
           <a href="#" className='transition-all transform hover:scale-105'><img src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg" alt="" /></a>
         </nav>
       </div>
-      <picture className='pt-6'>
+      <picture className='pt-6 hidden md:block self-end'>
         <img src="https://cdn.getir.com/getirweb-images/common/landing/phoneLanding.png" alt="" />
       </picture>
     </div>
