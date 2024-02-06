@@ -18,6 +18,7 @@ function HeroSection() {
 
   const settings = {
     dots: false,
+    arrow:false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -25,12 +26,12 @@ function HeroSection() {
     autoplay: true,
     speed: 1500,
     autoplaySpee: 2000,
-    cssEase: "linear"
+    cssEase: "linear",
   };
 
   return (
-    <div className='relative h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10' >
-        <Slider {...settings}>
+    <div className='relative inset-0 overflow-hidden w-[98%] mx-auto h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10' >
+      <Slider {...settings}>
           <div>
             <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-3.jpg" />
           </div>
@@ -41,8 +42,10 @@ function HeroSection() {
             <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg" />
           </div>
       </Slider>
+
+        
         <div className='container flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20'>
-          <div className='w-2/4'>
+          <div className='w-2/4 mr-6'>
           <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" alt="" />
           <h3 className='text-white mt-8 text-4xl font-semibold '>Dakikalar içinde kapında</h3>
           </div>
